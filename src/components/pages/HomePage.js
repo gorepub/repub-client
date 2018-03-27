@@ -1,32 +1,28 @@
 import React from 'react';
+import {
+  Col,
+  Container,
+  Row,
+} from 'reactstrap';
 
-import logo from '../../logo.svg';
-import api from '../../api';
+import './HomePage.css';
 
 class HomePage extends React.Component {
 
-  state = {
-    response: ''
-  };
-
-  componentDidMount() {
-    api
-      .foo()
-      .then(res => this.setState({ response: res.express }))
-      .catch(err => console.log(err));
-  }
-
   render() {
-    const { response } = this.state;
-
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">{response}</p>
-      </div>
+      <Container>
+        <Row>
+          <div>
+            <Col>
+              <h2 className="space-top"> Prazer em ter você aqui. Nós somos a repub.</h2>
+            </Col>
+            <Col>
+              <h5>Aqui, você pode encontrar vagas para morar em república ou simplesmente publicar a sua!</h5>
+            </Col>
+          </div>
+        </Row>
+      </Container>
     );
   }
 }

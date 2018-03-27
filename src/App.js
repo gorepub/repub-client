@@ -1,22 +1,20 @@
-import React from 'react';
-import './App.css';
-import { Container, Row, Col } from 'reactstrap';
+import React, { Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-// HomePage ...
-// import HomePage from './components/pages/HomePage';
+// Pages
+import HomePage from './components/pages/HomePage';
+import DashboardPage from './components/pages/DashboardPage';
+
+// Routes Wrapper
+import AuthRouteWrapper from './routes/AuthRouteWrapper';
 
 const App = () => (
-  <div>
-    <Container>
-        <Row>
-        <div>
-          <Col><h2 className="space-top">Prazer em ter você aqui. Nós somos a repub.</h2></Col>
-          <Col><h5>Aqui, você pode encontrar vagas
-             para morar em república ou simplesmente publicar a sua!</h5></Col>
-        </div>
-        </Row>
-      </Container>
-  </div>
+  <Fragment>
+    <Switch>
+      <Route path='/' exact component={HomePage} />
+      <AuthRouteWrapper path='/dashboard' component={DashboardPage} />
+    </Switch>
+  </Fragment>
 );
 
 export default App;
