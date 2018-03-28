@@ -11,7 +11,7 @@ class DashboardPage extends React.Component {
     return (
       <Container>
         <Row>
-          <Col sm={{ size: 12, offset: 1 }} md={{ size: 12, offset: 2 }}>
+          <Col md="12 center">
             <h2 className="space-top">Anuncie sua vaga</h2>
           </Col>
         </Row>

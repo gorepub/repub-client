@@ -3,7 +3,10 @@ import {
   Col,
   Container,
   Row,
+  Button,
 } from 'reactstrap';
+
+import {Link} from 'react-router-dom';
 
 import './HomePage.css';
 
@@ -13,11 +16,15 @@ class HomePage extends React.Component {
     return (
       <Container>
         <Row>
-          <Col sm={{ size: 12, offset: 1 }} md={{ size: 12, offset: 2 }}>
-            <h2 className="space-top"> Prazer em ter você aqui. Nós somos a repub.</h2>
+          <Col md="12">
+            <h2 className="space-top center"> Prazer em ter você aqui, nós somos a repub !</h2>
           </Col>
-          <Col sm={{ size: 12, offset: 1 }} md={{ size: 12, offset: 2 }}>
-            <h5 className="find-vacancies">Aqui, você pode encontrar vagas para morar em república ou simplesmente publicar a sua!</h5>
+          <Col md="12">
+            <p className="find-vacancies center">Aqui, você pode encontrar vagas para morar em república ou simplesmente <br/> publicar a sua, tudo de forma gratuita ! Vamos começar ?</p>
+          </Col>
+          <Col md="12 center">
+            <Button color="info"><Link to="/dashboard">Quero encontrar vagas</Link></Button>
+            <Button color="info">Quero anunciar vagas</Button>
           </Col>
         </Row>
       </Container>

@@ -7,3 +7,7 @@ body {
 .space-top {
   padding-top: 10%;
 }
+
+.center {
+  text-align: center;
+}
