@@ -8,15 +8,16 @@ const AuthRouteWrapper = ({ isAuthenticate, redirect, component: Component, ...r
     render={props => {
         if (isAuthenticate) {
           return <Component {...props} />
+        } else {
+          return <Redirect to={redirect} />
         }
-        return <Redirect to={redirect} />
       }
     }
   />
 );
 
 AuthRouteWrapper.defaultProps = {
-  isAuthenticate: false,
+  isAuthenticate: true,
   redirect: '/',
 };
 
