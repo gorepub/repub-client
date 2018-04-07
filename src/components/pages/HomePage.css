@@ -3,8 +3,12 @@
   padding-top: 6%;
 }
 
-button{
-  margin: 8%;
+button {
+  margin: 5%;
+}
+
+p, h2 {
+  color: #1e404e;
 }
 
 a {
