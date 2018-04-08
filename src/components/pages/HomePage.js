@@ -20,7 +20,8 @@ class HomePage extends React.Component {
             <h2 className="space-top center"> Prazer em ter você aqui, nós somos a repub !</h2>
           </Col>
           <Col md="12">
-            <p className="find-vacancies center">Aqui, você encontra vagas em repúblicas de estudantes ou simplesmente <br/> publicar a sua, tudo de forma rápida e gratuita ! Vamos começar ?</p>
+            <p className="find-vacancies center">Aqui, você consegue encontrar vagas em repúblicas de estudantes
+              ou simplesmente <br/> publicar a sua, tudo de forma rápida e gratuita ! Vamos começar ?</p>
           </Col>
           <Col md="12 center">
             <Button color="info">Quero encontrar vagas</Button>

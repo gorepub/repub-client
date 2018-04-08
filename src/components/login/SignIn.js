@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  Col,
-  Container,
-  Row,
-} from 'reactstrap';
+import { Container, Row, Col, Form, FormGroup, Label, Input} from 'reactstrap';
 
 class SignIn extends React.Component {
 
@@ -12,7 +8,19 @@ class SignIn extends React.Component {
       <Container>
         <Row>
           <Col md="12 center">
-            <h2 className="space-top">Bem-vindo</h2>
+            <h2 className="space-top">Seja bem-vindo, pronto para publicar sua vaga ?</h2>
+          </Col>
+          <Col md={{ size: 6, offset: 3 }}>
+            <Form>
+              <FormGroup>
+                <Label className="space-top">Email</Label>
+                <Input type="email" name="email" placeholder="Informe seu e-mail por gentileza" />
+              </FormGroup>
+              <FormGroup>
+                <Label>Senha</Label>
+                <Input type="password" name="password" placeholder="Coloque sua senha" />
+              </FormGroup>
+            </Form>
           </Col>
         </Row>
       </Container>
