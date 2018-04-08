@@ -17,7 +17,7 @@ class HomePage extends React.Component {
       <Container>
         <Row>
           <Col md="12">
-            <h2 className="space-top center"> Prazer em ter você aqui, nós somos a repub !</h2>
+            <h1 className="space-top center"> Prazer em ter você aqui, nós somos a repub !</h1>
           </Col>
           <Col md="12">
             <p className="find-vacancies center">Aqui, você consegue encontrar vagas em repúblicas de estudantes
@@ -25,7 +25,7 @@ class HomePage extends React.Component {
           </Col>
           <Col md="12 center">
             <Button color="info">Quero encontrar vagas</Button>
-            <Button color="info"><Link to= "/sign_in">Quero anunciar vagas</Link></Button>
+            <Button color="info"><Link to= "/sign_in" className="sign-in-link">Quero anunciar vagas</Link></Button>
           </Col>
         </Row>
       </Container>

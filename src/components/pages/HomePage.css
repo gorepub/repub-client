@@ -3,19 +3,11 @@
   padding-top: 6%;
 }
 
-button {
-  margin: 5%;
-}
-
-p, h2 {
-  color: #1e404e;
-}
-
-a {
+.sign-in-link {
   color: #fff;
 }
 
-a:hover {
+.sign-in-link:hover {
   text-decoration: none;
   color: #fff;
 }
