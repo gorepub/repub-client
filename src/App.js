@@ -5,10 +5,9 @@ import { Route, Switch } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
 import DashboardPage from './components/pages/DashboardPage';
 
-import CallApi from './api/CallApi';
-
 // Login
-import SignIn from './components/login/SignIn';
+import SignInPage from './components/pages/SignInPage';
+import NotFoundPage from './components/pages/NotFoundPage';
 
 // Routes Wrapper
 import AuthRouteWrapper from './routes/AuthRouteWrapper';
@@ -18,8 +17,8 @@ const App = () => (
     <Switch>
       <Route path='/' exact component={HomePage} />
       <AuthRouteWrapper path='/dashboard' component={DashboardPage} />
-      <AuthRouteWrapper path='/sign_in' component={SignIn} />
-      <AuthRouteWrapper path='/CallApi' component={CallApi} />
+      <AuthRouteWrapper path='/sign_in' component={SignInPage} />
+      <Route component={NotFoundPage} />
     </Switch>
   </Fragment>
 );
